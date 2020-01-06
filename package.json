@@ -1,0 +1,9 @@
+{
+  "name": "EverydayMail",
+  "version": "0.1",
+  "description": "Everyday Good Morning E-mail",
+  "main": "main.js",
+  "repository": "https://github.com/wzhzzmzzy/EverydayMail.git",
+  "author": "wzhzzmzzy <wzhzzmzzy@foxmail.com>",
+  "license": "MIT"
+}
