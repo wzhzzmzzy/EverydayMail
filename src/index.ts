@@ -7,12 +7,14 @@ import {
     renderTemplate, sendMail, loadOptions, Options
 } from './utils';
 
-async function run(options: Options) {
+async function run() {
+    console.log('Loading config.yaml...');
+    const options = loadOptions('config.yaml');
     console.log('Start task, now is ' + (new Date()));
     try {
         const one = await oneDaily();
         const weather = await weatherReport(options.HeWeatherKey);
-        const mailContent = renderTemplate('src/mail.pug', one, weather);
+        const mailContent = renderTemplate('templates/mail.pug', one, weather);
         sendMail(mailContent, options.SMTP, options.Mails);
     } catch(err) {
         console.log(err);
@@ -20,7 +22,7 @@ async function run(options: Options) {
 }
 
 export async function main() {
-    run(loadOptions('config.yaml'));
-    // console.log('Scheduling...')
-    // scheduleJob('0 30 7 * * *', run);
+    // run();
+    console.log('Scheduling...')
+    scheduleJob('0 30 7 * * *', run);
 }

@@ -24,6 +24,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node main.js",
-    "dev": "tsc && node main.js"
+    "dev": "tsc && node main.js",
+    "build:typings": "tsc -d --declarationDir typings"
   }
 }
