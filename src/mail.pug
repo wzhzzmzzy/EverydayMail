@@ -1,0 +1,53 @@
+doctype html
+
+head
+    title #{title}
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+body(style="margin: 0; padding: 0;")
+    table(
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+        height="100%"
+        width="100%"
+    )
+        tbody: tr: td: div
+            div(style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;")
+                div(style="border-collapse: collapse;display: table;width: 100%;background-color: #fff;")
+                    div(style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);")
+                        div(style="Margin-left: 20px;Margin-right: 20px;")
+                            div(style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;") &nbsp;
+                        div(style="Margin-left: 20px;Margin-right: 20px;"): div
+                            h3(style="Margin-top: 0;Margin-bottom: 12px;color: #281557;font-size: 18px;line-height: 26px;text-align: center;")
+                                span(style="color:#8e959c") #{year} / #{month} / #{day} #{weekday}
+                        div(style="font-size: 12px;line-height: 19px;" align="center")
+                            a(style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #18527c;" href="http://m.wufazhuce.com/one")
+                                img(style="border: 0;display: block;height: auto;width: 100%;max-width: 900px;" alt="ONE·摄影" width="600" src="http://image.wufazhuce.com/Fl0YflfjhlnFKzDOwSGpG3NKkIab")
+                        div(style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;")
+                            div(style="mso-line-height-rule: exactly;mso-text-raise: 4px;")
+                                blockquote(style="Margin-top: 0;Margin-bottom: 20px;Margin-left: 0;Margin-right: 0;padding-left: 14px;border-left: 4px solid #ccc;")
+                                    p(style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;")
+                                        span(style="color:#000000")
+                                            span(style="display:none") &nbsp;
+                                            .
+                                                #{onePictureContent}
+                        div(style="Margin-left: 20px;Margin-right: 20px;")
+                            div(style="display: block;font-size: 2px;line-height: 2px;Margin-left: auto;Margin-right: auto;width: 40px;background-color: #ccc;Margin-bottom: 20px;") &nbsp;
+                        div(style="Margin-left: 20px;Margin-right: 20px;")
+                            p(style="Margin-top: 0;Margin-bottom: 0;text-align: center;") 今日天气
+                div(style="line-height:20px;font-size:20px;") &nbsp;
+                div(style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;")
+                    div(style="border-collapse: collapse;display: table;width: 100%;background-color: #fff;")
+                        div(style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);")
+                            div(style="Margin-left: 20px;Margin-right: 20px;")
+                                p(style="Margin-top: 0;Margin-bottom: 0;text-align: center;") #{dayCondition} 到 #{nightCondition}
+                        div(style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);")
+                            div(style="Margin-left: 20px;Margin-right: 20px;")
+                                p(style="Margin-top: 0;Margin-bottom: 0;text-align: center;") #{tmpMin}°/#{tmpMax}°
+                        div(style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);")
+                            div(style="Margin-left: 20px;Margin-right: 20px;")
+                                p(style="Margin-top: 0;Margin-bottom: 0;text-align: center;") #{aqi} #{qlty}
+                div(style="line-height:20px;font-size:20px;") &nbsp;

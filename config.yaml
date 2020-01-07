@@ -1,0 +1,16 @@
+# 和风天气 API KEY
+# https://dev.heweather.com/docs/getting-started/
+HeWeatherKey: 
+SMTP:
+    # 邮箱运营商的 SMTP 配置
+    host: 
+    port: 
+    secure: 
+    auth:
+        user: 
+        pass: 
+Mails:
+    # 信件配置：发件人、收件人、标题
+    -   from: 
+        to: 
+        subject: 
